@@ -299,133 +299,207 @@ p {
 
 
 /*==========================
-    4.About
+    4. About Section
 ============================*/
 
+#about {
+    padding: 40px 0;
+    /* Reduced padding to save space */
+    position: relative;
+    min-height: 100vh;
+    /* Ensures the section takes up at least the full viewport height */
+    display: flex;
+    align-items: center;
+}
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    /* Dark overlay with 50% opacity */
+    z-index: 0;
+    /* Place behind content */
+}
+
+.container {
+    max-width: 1140px;
+    /* Adjust container width to standard */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .about-heading h4 {
-    font-size: 24px;
-    line-height: 1.6;
-    max-width: 550px;
+    font-size: 22px;
+    /* Slightly reduced font size */
+    line-height: 1.4;
+    max-width: 500px;
+    /* Slightly reduced max width */
     margin: 0 auto;
     text-align: center;
 }
 
 .about-border {
-    width: 90px;
+    width: 80px;
+    /* Reduced width */
     height: 3px;
     background-color: #667add;
     margin: 0 auto;
+    margin-bottom: 20px;
+    /* Reduced space between border and text */
 }
 
-.about-text p {
-    line-height: 1.8;
-    font-size: 15px !important;
+.about-text p,
+.about-heading p {
+    line-height: 1.6;
+    /* Reduced line height */
+    font-size: 14px !important;
+    /* Reduced font size */
+    max-width: 800px;
+    margin: 10px auto;
+    /* Reduced margin */
+    text-align: center;
 }
 
 .about-box h4 {
-    font-size: 20px;
+    font-size: 18px;
+    /* Slightly reduced font size */
 }
 
 .about-box p {
-    font-size: 15px;
-    line-height: 1.8;
-}
-
-.about-heading p {
-    font-size: 15px;
-    line-height: 1.8;
-    max-width: 900px;
-    margin: 0 auto;
+    font-size: 14px;
+    /* Reduced font size */
+    line-height: 1.6;
+    /* Reduced line height */
 }
 
 .home-play-icon {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    /* Reduced size */
+    width: 50px;
     background-color: #667add;
-    line-height: 60px;
+    line-height: 50px;
     text-align: center;
     border-radius: 50%;
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
+    /* Reduced icon size */
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 30px 0;
+        /* Further reduced padding for mobile */
+    }
+
+    .about-heading h4 {
+        font-size: 20px;
+        max-width: 90%;
+        /* Adjusted max width for mobile */
+    }
+
+    .about-border {
+        width: 60px;
+        /* Reduced width */
+        height: 2px;
+    }
+
+    .about-text p,
+    .about-heading p {
+        font-size: 13px !important;
+        line-height: 1.5;
+        /* Reduced line height */
+        margin: 5px auto;
+    }
+
+    .home-play-icon {
+        height: 45px;
+        /* Adjusted size */
+        width: 45px;
+        font-size: 18px;
+    }
 }
 
 
-/*==========================
-    5. Service
+ /*==========================
+            5. Service
 ============================*/
 
-.service-icon i {
-    font-size: 55px;
-    color:#ffaa00; /* Assuming white icon color for better contrast */
-}
+ .service-icon i {
+     font-size: 55px;
+     color: #ffaa00;
+ }
 
-.service-desc h4 {
-    font-size: 20px;
-    color: #fff; /* Assuming white text color for better contrast */
-}
+ .service-desc h4 {
+     font-size: 20px;
+     color: #fff;
+ }
 
-.service-box {
-    background-color: #03263dfb;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Initial shadow */
-    transition: transform .2s linear, box-shadow .2s linear;
-    top: 0!important;
-    overflow: hidden;
-    position: relative;
-}
+ .service-box {
+     background-color: #03263dfb;
+     border-radius: 10px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+     transition: transform .2s linear, box-shadow .2s linear;
+     top: 0 !important;
+     overflow: hidden;
+     position: relative;
+ }
 
-.service-box:hover {
-    transform: translateY(-4px)!important;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-}
+ .service-box:hover {
+     transform: translateY(-4px) !important;
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+ }
 
-.service-desc {
-    padding: 15px;
-    text-align: left;
-    transition: color 0.3s;
-}
+ .service-desc {
+     padding: 15px;
+     text-align: left;
+     transition: color 0.3s;
+ }
 
-.service-desc p {
-    font-size: 15px;
-    line-height: 1.8;
-    color: #ddd; /* Assuming light grey text color for better contrast */
-}
+ .service-desc p {
+     font-size: 15px;
+     line-height: 1.8;
+     color: #ddd;
+ }
 
-.service-desc h4,
-.service-desc p,
-.service-desc a {
-    transition: color 0.3s;
-}
+ .service-desc h4,
+ .service-desc p,
+ .service-desc a {
+     transition: color 0.3s;
+ }
 
-.service-box:hover .service-desc h4,
-.service-box:hover .service-desc p,
-.service-box:hover .service-desc a {
-    color: #007bff; /* Change this color as needed */
-}
+ .service-box:hover .service-desc h4,
+ .service-box:hover .service-desc p,
+ .service-box:hover .service-desc a {
+     color: #007bff;
+ }
 
-.service-desc>a {
-    font-size: 14px;
-    font-weight: 500;
-    color: #007bff; /* Link color */
-    text-decoration: none;
-}
+ .service-desc>a {
+     font-size: 14px;
+     font-weight: 500;
+     color: #007bff;
+     text-decoration: none;
+ }
 
-.service-desc>a:hover {
-    color: #0056b3; /* Darker link color on hover */
-}
+ .service-desc>a:hover {
+     color: #0056b3;
+ }
 
-.service-box .img-shadow {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
+ .service-box .img-shadow {
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+     width: 100%;
+     margin-top: 15px;
+ }
 
-.service-box .border-round {
-    border-radius: 10px;
-}
+ .service-box .border-round {
+     border-radius: 10px;
+ }
 
-.text-custom {
-    color: #fff; /* Assuming white text color for better contrast */
-}
+ .text-custom {
+     color: #fff;
+ }
 
 
 /********************
