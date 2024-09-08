@@ -251,11 +251,14 @@ p {
     3.Home
 ============================*/
 
+/* Home Section */
 .bg-home {
-    background-image: url(../images/home-bg.jpg);
+    background-image: url(../images/savlen/worried-at-the-office.jpg);
+    /* Updated background image */
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    /* Keeps the height of the home section to 100% of the viewport */
 }
 
 .home-section .carousel-item {
@@ -282,6 +285,7 @@ p {
 
 .home-title {
     color: #ffaa00 !important;
+    /* Text color */
     font-size: 48px;
     line-height: 1.2;
 }
@@ -290,11 +294,43 @@ p {
     max-width: 600px;
     line-height: 1.8;
     font-size: 16px;
-    color: #ffaa00
+    color: #ffaa00;
 }
 
 .watch-video a {
     margin-left: 7px;
+}
+
+/* Additional Info Styling */
+.additional-info {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Adjust transparency level here */
+    padding: 20px;
+    /* Optional: Add padding for better spacing */
+    border-radius: 8px;
+    /* Optional: Add rounded corners */
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.additional-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffaa00;
+    /* Use the same yellow tone for consistency */
+}
+
+.additional-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.additional-info li {
+    margin: 10px 0;
+    color: #ffaa00;
+    /* Keeping text color consistent */
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 
@@ -304,13 +340,16 @@ p {
 
 #about {
     padding: 40px 0;
-    /* Reduced padding to save space */
     position: relative;
     min-height: 100vh;
-    /* Ensures the section takes up at least the full viewport height */
     display: flex;
     align-items: center;
+    justify-content: center;
+    /* Center-align the content vertically */
+    background-attachment: fixed;
+    /* Parallax effect for background image */
 }
+
 .background-overlay {
     position: absolute;
     top: 0;
@@ -318,90 +357,95 @@ p {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.75);
-    /* Dark overlay with 50% opacity */
     z-index: 0;
-    /* Place behind content */
 }
 
+/* Container adjustments */
 .container {
     max-width: 1140px;
-    /* Adjust container width to standard */
     margin: 0 auto;
     padding: 0 15px;
 }
 
+/* About Heading */
 .about-heading h4 {
-    font-size: 22px;
-    /* Slightly reduced font size */
+    font-size: 24px;
+    /* Adjusted for better readability */
     line-height: 1.4;
-    max-width: 500px;
-    /* Slightly reduced max width */
+    max-width: 600px;
+    /* Increased width for more balanced text layout */
     margin: 0 auto;
     text-align: center;
+    color: #fff;
+    /* Ensure the heading is visible against dark background */
 }
 
+/* About Border */
 .about-border {
-    width: 80px;
-    /* Reduced width */
+    width: 100px;
+    /* Increased width for a more substantial effect */
     height: 3px;
-    background-color: #667add;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    /* Reduced space between border and text */
+    background-color: #D4A251;
+    /* Updated to match gold theme */
+    margin: 0 auto 20px auto;
 }
 
+/* About Text */
 .about-text p,
 .about-heading p {
     line-height: 1.6;
-    /* Reduced line height */
-    font-size: 14px !important;
-    /* Reduced font size */
-    max-width: 800px;
+    font-size: 15px !important;
+    /* Slightly larger font for better readability */
+    max-width: 850px;
     margin: 10px auto;
-    /* Reduced margin */
     text-align: center;
+    color: #ddd;
+    /* Lightened text for better contrast */
 }
 
+/* Box Text */
 .about-box h4 {
-    font-size: 18px;
-    /* Slightly reduced font size */
+    font-size: 20px;
+    /* Slightly larger font size */
 }
 
 .about-box p {
     font-size: 14px;
-    /* Reduced font size */
     line-height: 1.6;
-    /* Reduced line height */
+    color: #ccc;
+    /* Lightened for better visibility */
 }
 
+/* Play Icon */
 .home-play-icon {
-    height: 50px;
-    /* Reduced size */
-    width: 50px;
-    background-color: #667add;
-    line-height: 50px;
+    height: 55px;
+    /* Adjusted size */
+    width: 55px;
+    background-color: #D4A251;
+    /* Updated to match theme */
+    line-height: 55px;
     text-align: center;
     border-radius: 50%;
     display: inline-block;
-    font-size: 20px;
-    /* Reduced icon size */
+    font-size: 22px;
+    color: #fff;
 }
 
+/* Mobile View Adjustments */
 @media (max-width: 768px) {
     #about {
         padding: 30px 0;
-        /* Further reduced padding for mobile */
+        flex-direction: column;
+        /* Stack content for smaller screens */
     }
 
     .about-heading h4 {
         font-size: 20px;
         max-width: 90%;
-        /* Adjusted max width for mobile */
     }
 
     .about-border {
         width: 60px;
-        /* Reduced width */
         height: 2px;
     }
 
@@ -409,13 +453,11 @@ p {
     .about-heading p {
         font-size: 13px !important;
         line-height: 1.5;
-        /* Reduced line height */
         margin: 5px auto;
     }
 
     .home-play-icon {
         height: 45px;
-        /* Adjusted size */
         width: 45px;
         font-size: 18px;
     }
@@ -500,7 +542,10 @@ p {
  .text-custom {
      color: #fff;
  }
-
+ 
+.row.pt-4 {
+    background-color: white;
+}
 
 /********************
     6. contact form
