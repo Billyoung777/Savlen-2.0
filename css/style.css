@@ -252,6 +252,7 @@ p {
 ============================*/
 
 /* Home Section */
+
 .bg-home {
     background-image: url(../images/savlen/worried-at-the-office.jpg);
     /* Updated background image */
@@ -262,6 +263,7 @@ p {
 }
 
 .home-section .carousel-item {
+    padding-top: 110px;
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -286,7 +288,7 @@ p {
 .home-title {
     color: #ffaa00 !important;
     /* Text color */
-    font-size: 48px;
+    font-size: 42px;
     line-height: 1.2;
 }
 
