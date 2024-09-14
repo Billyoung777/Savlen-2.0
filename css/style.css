@@ -305,7 +305,7 @@ p {
 
 /* Additional Info Styling */
 .additional-info {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.904);
     /* Adjust transparency level here */
     padding: 20px;
     /* Optional: Add padding for better spacing */
@@ -328,6 +328,7 @@ p {
 }
 
 .additional-info li {
+    text-align: left;
     margin: 10px 0;
     color: #ffaa00;
     /* Keeping text color consistent */

@@ -2,7 +2,8 @@
         NAVBAR
 *******************************/
 #topnav {
-    z-index: 1000;
+    background-color: #072437 !important;
+    z-index: 1050;
     position: fixed;
     box-shadow: none;
     border: 0;
@@ -46,10 +47,10 @@
 #topnav .logo {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 250;
+    font-weight: 200;
     letter-spacing: 2px;
     float: left;
-    line-height: 35px;
+    line-height: 30px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     font-size: 1.25rem;
@@ -114,6 +115,9 @@
     top: 6px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+#topnav.nav-link.btn {
+    margin: 20px;
 }
 
 #topnav .navbar-toggle:hover,
