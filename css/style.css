@@ -323,12 +323,13 @@ p {
 }
 
 .additional-info ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .additional-info li {
     text-align: left;
+    margin-left: 10px;
     margin: 10px 0;
     color: #ffaa00;
     /* Keeping text color consistent */
