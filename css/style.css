@@ -264,9 +264,12 @@ p {
 
 .home-section .carousel-item {
     padding-top: 110px;
-    height: 100vh;
+    height: 70vh;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-control-next,
@@ -335,6 +338,58 @@ p {
     /* Keeping text color consistent */
     font-size: 16px;
     line-height: 1.6;
+}
+
+.contact-btn {
+    background-color: white;
+    color: #072540;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Cornerstone Section */
+.cornerstone {
+    background-color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    border-top: 8px solid #00233A;
+    /* Optional divider at the top */
+}
+
+.cornerstone h3 {
+    font-size: 24px;
+    margin-right: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.cornerstone ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cornerstone ul li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+    /* Space for custom bullet icon */
+}
+
+.cornerstone ul li::before {
+    content: '•';
+    /* Custom bullet */
+    color: #f5af3c;
+    /* Bullet color */
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: -3px;
 }
 
 
