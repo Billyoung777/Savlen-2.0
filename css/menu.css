@@ -6,17 +6,29 @@
     z-index: 1050;
     position: fixed;
     box-shadow: none;
-    border: 0;
+    width: 100%;
+    min-height: 62px;
+    /*border: 0;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
-    min-height: 62px;
+    min-height: 62px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
-
+#topnav .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 #topnav .navigation-menu {
     float: right;
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 20px;
 }
 
 #topnav .navigation-menu > li {
@@ -24,13 +36,15 @@
     display: block;
     position: relative;
     margin: 0 5px;
+    list-style: none;
 }
 
 #topnav .navigation-menu > li > a {
     display: block;
     font-size: 14px;
     color: #f8bc08;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    text-decoration: none;
     -webkit-transition: all .3s ease;
     transition: all .5s ease;
     line-height: 24px;
@@ -39,22 +53,39 @@
     /* font-weight: 400; */
 }
 
-#topnav .navigation-menu > li .submenu li a i {
+#topnav .navigation-menu>li>a:hover{
+    color: #fdc200fb;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 50px;/* This creates the oval shape on hover */
+    padding: 10px 35px;/* Adjust padding for a more pronounced oval effect */
+}
+
+
+
+
+
+/*#topnav .navigation-menu > li .submenu li a i {
     margin-right: 10px;
     font-size: 14px;
 }
 
-#topnav .logo {
+#topnav .logo a{
     color: #fff;
     text-transform: uppercase;
-    font-weight: 200;
+    font-size: 1.5rem;
+    font-weight: 700;
     letter-spacing: 2px;
     float: left;
+    color: #f8bc08;
     line-height: 30px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     font-size: 1.25rem;
-    left: -100;
+    position: absolute;
+    left: 0px;;
+    padding-left: 10px;
 }
 
 #topnav .menu-extras {
@@ -181,9 +212,9 @@
 
 #topnav .navbar-toggle.open span:hover, .bg-custom, .btn-custom, .about-title-border {
     background-color: #667add !important;
-}
+}*/
 
-/* Responsive */
+/* Responsive 
 @media (min-width: 992px) {
     #topnav .navigation-menu > li > a {
         padding-top: 25px;
@@ -404,4 +435,4 @@
     #topnav {
         background-color: #072437!important;
     }
-}
+}*/
