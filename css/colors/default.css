@@ -2,7 +2,7 @@
 #topnav .has-submenu.active .submenu li.active > a, 
 #navigation li.active a, .text-custom, .filter-list a.active, 
 .filter-list a:hover,  .testimonial .quote .quote-mark, .team-post, .pricing-box .lable .best, .blog .blog-meta a, .blog-more{
-    color: #f8bc08 !important;
+    color: #ffef0f !important;
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
@@ -10,16 +10,16 @@
 #topnav .navigation-menu > li .submenu li a:hover, 
 #topnav .navigation-menu .has-submenu .submenu > li:hover > a, 
 #topnav .navigation-menu > li:hover > a {
-    color: #007bff !important;
+    color: #fcc600 !important;
 }
 #topnav .navbar-toggle.open span:hover, .bg-custom, .btn-custom, .about-title-border {
-    background-color: #007bff !important;
+    background-color: #fbda00!important;
 }
 
 .btn-custom {
     transition: all 0.4s;
     color: #fff !important;
-    border: 2px solid #007bff;
+    border: 2px solid #c3ff0f;
 }
 
 .btn-custom:hover,
@@ -32,14 +32,14 @@
 .btn-custom:hover,
 .open > .dropdown-toggle.btn-custom {
     box-shadow: 0 20px 50px 0 rgba(39, 181, 155, 0.25);
-    background-color:#f8bc08 !important;
-    border: 2px solid#f8bc08 !important;
+    background-color:#c3ff0f !important;
+    border: 2px solid#c3ff0f !important;
 }
 .service-desc a {
     color: #c3ff0f;
 }
 .filter-list a.active, .filter-list a:hover, .testimonial .quote .quote-mark {
-    color: #007bff !important;
+    color: #c3ff0f !important;
 }
 .play-icon-circle {
     background-color: transparent;
@@ -53,7 +53,7 @@
 @media (min-width: 992px) {
     #topnav .navigation-menu > li .submenu li a:hover,#topnav .navigation-menu .has-submenu .submenu > li:hover > a,#topnav .navigation-menu > li:hover > a,
     #topnav .navigation-menu > li:hover > .menu-arrow{
-        color: #fed800 !important;
+        color: #007bff !important;
         font-weight: bold;
         font-size: 16px;
         text-transform: uppercase;
