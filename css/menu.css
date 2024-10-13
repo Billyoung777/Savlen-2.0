@@ -55,12 +55,12 @@
 }
 
 #topnav .navigation-menu>li>a:hover{
-    color: #fdc200fb;
+    color: #007bff;
     background-color: #ffffff;
     border-color: #ffffff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    border-radius: 50px;/* This creates the oval shape on hover */
-    padding: 10px 35px;/* Adjust padding for a more pronounced oval effect */
+    border-radius: 50px; /* This creates the oval shape on hover */
+    padding: 10px 35px; /* Adjust padding for a more pronounced oval effect */
 }
 
 
@@ -101,6 +101,17 @@
 
 .has-submenu {
     position: relative;
+}
+
+#topnav .navbar-toggle span {
+    height: 2px;
+    width: 100%;
+    background-color: #f8bc08;
+    display: block;
+    margin-bottom: 5px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 /*#topnav .navbar-toggle {
