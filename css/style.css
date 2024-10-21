@@ -252,146 +252,142 @@ p {
     3.Home
 ============================*/
 
-/* Home Section */
-
-.bg-home {
-    background-image: url(../images/savlen/worried-at-the-office.jpg);
-    /* Updated background image */
-    background-size: cover;
-    background-position: center center;
+/* Carousel Settings */
+.custom-carousel {
+    position: relative;
+    top: 0;
+    width: 100% ; /* Adjust to set how far right you want the carousel */
+   /* Align the carousel to the right */
     height: 100vh;
-    /* Keeps the height of the home section to 100% of the viewport */
+    display: flex;
+    justify-content: flex-start; /* Start in the middle */
+    align-items: center; /* Vertical alignment to the middle */
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0px;
+    background-color: #00233A;
+    
+    /*height: 100vh; /* Full height carousel 
+    background-size: cover;
+    background-position: center;*/
 }
 
-.home-section .carousel-item {
-    padding-top: 110px;
-    height: 70vh;
-    background-size: cover;
-    background-position: center center;
+.carousel-inner {
+    position: relative;
+    top: 0;
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    margin-top: -35px;
+}
+
+.carousel-item {
+    height: 70vh; /* Control height of each item */
+    background-size: cover;
+    background-position: center top 15%;
+    align-items: left;
+}
+
+/* Carousel Caption Customization */
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    left: auto;
+    bottom: 50%;
+    transform: translateY(50%);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    width: 5%;
-}
-
-.home-center {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-
-.home-desc-center {
-    display: table-cell;
-    vertical-align: middle;
+    align-items: end;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, 0.116);
+    /*background: rgba(0, 0, 0, 0.5); /* Add semi-transparent background 
+    padding: 20px;
+    color: #fff;
+    max-width: 500px; /* Adjust width of text block
+    text-align: left;*/
 }
 
 .home-title {
-    color: #ffaa00 !important;
-    /* Text color */
+    color: #ffaa00;
     font-size: 42px;
     line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .home-sub-title {
-    max-width: 600px;
-    line-height: 1.8;
-    font-size: 16px;
-    color: #ffaa00;
-}
-
-.watch-video a {
-    margin-left: 7px;
-}
-
-/* Additional Info Styling */
-.additional-info {
-    background-color: rgba(255, 255, 255, 0.904);
-    /* Adjust transparency level here */
-    padding: 20px;
-    /* Optional: Add padding for better spacing */
-    border-radius: 8px;
-    /* Optional: Add rounded corners */
-    margin-top: 20px;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: bold;
-}
-.additional-info h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #ffaa00;
-    /* Use the same yellow tone for consistency */
+    color: #000000;
+    margin-bottom: 20px;
 }
 
-.additional-info ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.additional-info li {
-    text-align: left;
-    margin-left: 10px;
-    margin: 10px 0;
-    color: #ffaa00;
-    /* Keeping text color consistent */
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.contact-btn {
-    background-color: white;
-    color: #072540;
+.btn-outline-custom {
+    border: 2px solid #ffffff;
+    color: #ffffff;
     padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
+    border-radius: 25px;
+    text-transform: uppercase;
 }
 
-/* Cornerstone Section */
+.btn-outline-custom:hover {
+    background-color: #ffffff;
+    color: #072540;
+}
+
 .cornerstone {
-    background-color: #fff;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
     border-top: 8px solid #00233A;
-    /* Optional divider at the top */
+
+    /* Apply Flexbox to align items */
+    display: flex;
+    justify-content: space-between;
+    /* This will push the h3 and ul to opposite sides */
+    align-items: center;
+    /* Vertically center the content */
 }
 
+/* Heading on the left */
 .cornerstone h3 {
     font-size: 24px;
-    margin-right: 30px;
-    color: #333;
-    font-weight: 600;
+    font-weight: bold;
+    color: #00233A;
+    text-align: left;
+    /* Make sure the heading is aligned left */
+    margin: 0;
+    /* Remove any default margins */
 }
 
+/* List on the right */
 .cornerstone ul {
     list-style-type: none;
     padding-left: 0;
+    color: #333333;
+    display: flex-end;
+    text-align: center;
+    /* Align list to the right */
+    margin: 0;
+    /* Remove any default margins */
 }
 
+/* List item styling */
 .cornerstone ul li {
     font-size: 18px;
-    color: #333;
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 20px;
-    /* Space for custom bullet icon */
+    margin-bottom: 10px;
 }
 
+/* Add a bullet point before list items */
 .cornerstone ul li::before {
     content: '•';
-    /* Custom bullet */
     color: #f5af3c;
-    /* Bullet color */
-    font-size: 30px;
-    position: absolute;
-    left: 0;
-    top: -3px;
+    font-size: 24px;
+    margin-right: 10px;
 }
+
 
 
 /*==========================
