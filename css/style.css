@@ -253,12 +253,16 @@ p {
 ============================*/
 
 /* Carousel Settings */
+.home-section {
+    padding: 0;
+    margin: 0;
+}
 .custom-carousel {
     position: relative;
     top: 0;
     width: 100% ; /* Adjust to set how far right you want the carousel */
    /* Align the carousel to the right */
-    height: 100vh;
+    height: 480px;
     display: flex;
     justify-content: flex-start; /* Start in the middle */
     align-items: center; /* Vertical alignment to the middle */
@@ -274,12 +278,12 @@ p {
 
 .carousel-inner {
     position: relative;
-    top: 0;
+    bottom: -25px;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: -35px;
 }
 
 .carousel-item {
@@ -293,7 +297,7 @@ p {
 .carousel-caption {
     position: absolute;
     right: 0;
-    left: auto;
+    left: 50%;
     bottom: 50%;
     transform: translateY(50%);
     text-align: left;
@@ -302,7 +306,7 @@ p {
     justify-content: center;
     align-items: end;
     padding-right: 20px;
-    background: rgba(0, 0, 0, 0.116);
+    background: rgba(0, 0, 0, 0);
     /*background: rgba(0, 0, 0, 0.5); /* Add semi-transparent background 
     padding: 20px;
     color: #fff;
@@ -341,14 +345,10 @@ p {
     background-color: #ffffff;
     padding: 40px;
     text-align: center;
-    border-top: 8px solid #00233A;
-
-    /* Apply Flexbox to align items */
+    border-top: 8px solid #00233A; /* Apply Flexbox to align items */
     display: flex;
-    justify-content: space-between;
-    /* This will push the h3 and ul to opposite sides */
-    align-items: center;
-    /* Vertically center the content */
+    justify-content: space-between; /* This will push the h3 and ul to opposite sides */
+    align-items: center; /* Vertically center the content */
 }
 
 /* Heading on the left */
@@ -368,14 +368,13 @@ p {
     padding-left: 0;
     color: #333333;
     display: flex-end;
-    text-align: center;
-    /* Align list to the right */
-    margin: 0;
-    /* Remove any default margins */
+    text-align: center; /* Align list to the right */
+    margin: 0; /* Remove any default margins */
 }
 
 /* List item styling */
 .cornerstone ul li {
+    display :flex;
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -383,9 +382,13 @@ p {
 /* Add a bullet point before list items */
 .cornerstone ul li::before {
     content: '•';
-    color: #f5af3c;
+    color: #ffaa00;
     font-size: 24px;
     margin-right: 10px;
+}
+
+.col-lg-9 {
+    left: 25%;
 }
 
 
