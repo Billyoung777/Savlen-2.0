@@ -374,6 +374,7 @@ p {
 
 /* List item styling */
 .cornerstone ul li {
+    left: 5%;
     display :flex;
     font-size: 18px;
     margin-bottom: 10px;
@@ -388,7 +389,7 @@ p {
 }
 
 .col-lg-9 {
-    left: 25%;
+    left: 5%;
 }
 
 
